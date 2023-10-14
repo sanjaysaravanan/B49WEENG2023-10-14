@@ -1,0 +1,90 @@
+
+Topics:
+
+  1. Life Cycle Hook ---> useEffect()
+
+    Mounted: ( JSX Elements Getting into Real DOM )
+      useEffect(() => {
+
+        // Statements to be executed on Mounted Phase
+
+        // dependency array should be empty
+      }, []);
+    
+    Updation: ( a state or props changes trigger the updation/mounted statements )
+      useEffect(() => {
+
+        // Statements to be executed on Updation Phase
+
+        // dependency array should contain a dependen state or props
+        // Above statements will be executed on the Updation of depending state
+      }, [state]);
+
+    Unmount: ( JSX Elements getting removed from the Real DOM )
+      useEffect(() => {
+
+        return () => {
+          // statements to be executed on Unmouted Phase
+        }
+        // make the dependencies as empty array
+      }, []);
+  
+  2. Passing Dynamic Data:
+
+      Parent to Child:
+        very simple, a state value/ static data on a parent can be passed as property( props ) to child
+
+      Child to Parent:
+        passing argumented/parameterised function as a props to child
+
+        passing data from child to parent can be acheived with a function (data as arguements )written in parent gets passed to the child as a prop
+
+        <PopUp handleSubmit={handleSubmit} /> 
+        
+        // handleSubmit will take the credentials data from child as argument and pass it to parent
+  
+  3. React Router DOM
+
+    Simple Path No Parameters, for every body this path won't change
+    https://github.com/settings/profile --> this is simple path rendering where everbody will see their user contents
+
+    Path which determines what contents to render
+
+    Path Parameters: As value which is used to determine what information to render
+
+        https://github.com/sanjaysaravanan 
+        https://github.com/rohit45k
+
+        https://facebook.com/sanjaysaravanan
+        https://facebook.com/rohit45k
+
+        In Out E-Commerce application we have the /:productId
+  
+    query params:
+      useSearchParams
+
+Next Session:
+
+  Navigate:
+    navigates to the specified route
+
+  4. Props Drilling:
+      passing props from child to parent
+      Drilling of a particular or group of props to two or more level of components
+
+  5. Avoid Props Drilling:
+
+      Hook to avoid Props Drilling --> useContext
+    
+      Example: 
+        Simple Light Theme Dark Theme
+        Light / Theme Dark for E-Commerce Application
+
+        Convert all the states to use context
+
+
+
+
+
+
+
