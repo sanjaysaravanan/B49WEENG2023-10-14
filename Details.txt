@@ -63,6 +63,10 @@ Topics:
     query params:
       useSearchParams
 
+        example:
+
+        /products?category=fragrances
+
 Next Session:
 
   Navigate:
