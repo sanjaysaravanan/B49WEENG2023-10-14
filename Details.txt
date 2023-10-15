@@ -14,7 +14,7 @@ Topics:
     Updation: ( a state or props changes trigger the updation/mounted statements )
       useEffect(() => {
 
-        // Statements to be executed on Updation Phase
+        // Statements to be executed on Updation/Mounted Phase
 
         // dependency array should contain a dependen state or props
         // Above statements will be executed on the Updation of depending state
@@ -32,7 +32,9 @@ Topics:
   2. Passing Dynamic Data:
 
       Parent to Child:
-        very simple, a state value/ static data on a parent can be passed as property( props ) to child
+        very simple, a state value/ static data on a parent can be passed as property( props ) to the child
+        Even functions can be passed as callback( as prop ) to the child.
+        Always use a named callback function for passing as a prop
 
       Child to Parent:
         passing argumented/parameterised function as a props to child
@@ -58,7 +60,7 @@ Topics:
         https://facebook.com/sanjaysaravanan
         https://facebook.com/rohit45k
 
-        In Out E-Commerce application we have the /:productId
+        In our e-commerce application we have the /:productId
   
     query params:
       useSearchParams
